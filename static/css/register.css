@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 3;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header a {
+  color: black;
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+.icon {
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.icon h2 {
+  margin-top: 3px;
+}
+
+.icon img {
+  margin-top: -8px;
+  width: 50px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  margin: 0 30px;
+}
+
+nav ul li a:hover {
+  color: skyblue;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: -6rem;
+}
+
+.img img {
+  display: flex;
+  margin: 0 auto;
+}
+
+main {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; 
+  background-color: #fff;
+}
+
+.container h1 {
+  padding-top: 3rem;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.form_human {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.form-container {
+  background-color: gainsboro;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 850px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  margin-bottom: 3rem;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-left: 1.7rem;
+  width: 93%;
+  margin-top: 1.5rem;
+  padding: 12px 0;
+  background-color: #3AA8AD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1e595c;
+}
+
+form select {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form_pet {
+  width: 320px;
+}
+
+.form_human {
+  width: 320px;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  margin-top: 2rem;
+}
+
+.social {
+  display: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.social ion-icon {
+  border: 1px solid #C9CCCB;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+}

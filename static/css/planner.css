@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Estilos globales para el header y el nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative; /* Asegura que el z-index sea efectivo */
+  z-index: 3; /* Un z-index mayor que el de .img */
+}
+
+header h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header a{
+  color: black;
+}
+.nav{
+  margin-top: 15px;
+}
+
+.icon{
+  display: flex;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.icon h2{
+  margin-top: 3px;
+}
+
+.icon img{
+  margin-top: -8px;
+  width: 50px;
+}
+
+.nav ul{
+  display: flex;
+}
+
+.nav li{
+  margin: 0 30px;
+}
+
+nav ul li a:hover {
+  color: skyblue;
+}
+
+.general{
+  width: 80%;
+  display: block;
+  margin: 50px auto;
+  margin-top: 4rem;
+}
+
+.general h2{
+  padding-bottom: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.general img{
+  display: block;
+  margin: 4rem auto;
+  width: 400px;
+}
+
+.general p {
+  line-height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+table.agenda {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table.agenda thead {
+  background-color: #00796b;
+  color: white;
+}
+
+table.agenda th, table.agenda td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table.agenda td {
+  background-color: #e8f5e9;
+}
+
+table.agenda tr:nth-child(even) td {
+  background-color: #c8e6c9;
+}
+
+table.agenda td:nth-child(2) {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table.agenda td:nth-child(2):contains('Ocupado') {
+  color: #d32f2f;
+}
+
+table.agenda td:nth-child(2):contains('Disponible') {
+  color: #388e3c;
+}
+
+/* Footer */
+
+.footer{
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.social{
+  display:center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.social ion-icon{
+  border:  1px solid #C9CCCB;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+}
+
