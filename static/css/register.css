@@ -1,3 +1,4 @@
+/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,8 @@
   list-style: none;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -56,8 +58,9 @@ header a {
   width: 50px;
 }
 
+/* Muestra el menú de navegación de manera horizontal en pantallas grandes */
 .nav ul {
-  display: flex;
+  display: flex; /* Horizontal por defecto */
 }
 
 .nav li {
@@ -85,7 +88,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; 
+  flex: 1;
   background-color: #fff;
 }
 
@@ -199,4 +202,107 @@ form select {
   border-radius: 6px;
   padding: 8px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .container img {
+    width: 23rem;
+    margin-bottom: 3rem;
+  }
+
+  .container h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-container h2{
+    margin-top: 2rem;
+  }
+
+  .inputs {
+    flex-direction: column; /* Cambia a columna para una sola fila */
+    width: 100%;
+  }
+
+  .form_human,
+  .form_pet {
+    width: 100%; /* Asegura que los elementos del formulario ocupen el 100% del contenedor */
+    padding: 0; /* Elimina el padding adicional */
+  }
+
+  form input,
+  form select {
+    width: 100%; /* Ajusta el ancho para ocupar el contenedor completo */
+  }
+
+  form button {
+    width: 100%; /* El botón también ocupa todo el ancho */
+    margin-left: 0; /* Elimina el margen izquierdo adicional */
+  }
+
+  .nav {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Disposición vertical */
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 150px; /* Ancho completo del dispositivo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 60px; /* Ajusta según la posición del header */
+    margin-top: -1rem;
+    margin-left: 15rem;
+  }
+
+  /* Estilo de los enlaces del menú */
+  .nav ul {
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+  }
+
+  .nav ul li {
+    width: 100%; /* Cada elemento ocupa toda la línea */
+  }
+
+  .nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block; /* Mostrar cada enlace en línea separada */
+    width: 100%; /* Ancho completo */
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    width: 60%;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.show {
+    display: flex; /* Mostrar flex */
+    flex-direction: column; /* Forzar disposición vertical */
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 30px;
+    margin-right: 1rem;
+  }
 }

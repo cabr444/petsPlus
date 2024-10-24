@@ -7,9 +7,10 @@
   list-style: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 body {
@@ -30,11 +31,11 @@ header {
   cursor: pointer;
 }
 
-header a{
+header a {
   color: black;
 }
 
-header h2{
+header h2 {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -67,7 +68,7 @@ nav ul li a:hover {
 
 main {
   width: 100%;
-  flex: 1; 
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +107,6 @@ h4 {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   padding: 40px 60px;
-  margin-bottom: 6%;
 }
 
 .imagehome {
@@ -126,7 +126,7 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  background-color: #3AB397;
+  background-color: #3ab397;
   color: white;
 }
 
@@ -148,8 +148,178 @@ footer {
 }
 
 .social ion-icon {
-  border: 1px solid #C9CCCB;
+  border: 1px solid #c9cccb;
   border-radius: 6px;
   padding: 8px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+}
+
+/* Media Query para pantallas de hasta 768px (tablets y móviles) */
+@media (max-width: 768px) {
+  body {
+    overflow: auto; /* Permitir el desplazamiento en dispositivos móviles */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    margin-top: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .icon h2 {
+    font-size: 1rem;
+  }
+
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav li {
+    margin: 0;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .title h2 {
+    font-size: 60px;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imagehome {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    padding: 0;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  
+
+  footer {
+    position: static;
+    padding: 10px;
+  }
+}
+
+/* Media Query para pantallas de hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+  .title h2 {
+    font-size: 70px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+
+  .icon img {
+    width: 60px;
+    margin: 0 auto;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del icono */
+    display: inline-block;
+    position: relative;
+  }
+
+  /* Estilo del contenedor del menú */
+  .nav {
+    margin-top: 8rem;
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 200px; /* Ancho del menú */
+    max-width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Estilo de los enlaces del menú */
+  .nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    text-align: center; /* Centrar el texto */
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.show {
+    display: flex;
+  }
+
+  /* Estilos del header para alinear elementos */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: -1rem;
+    background-color: #fff;
+  }
+
+  /* Ocultar la lista de navegación principal por defecto */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+}
+

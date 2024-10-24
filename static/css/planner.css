@@ -1,3 +1,4 @@
+/* Estilos globales */
 *{
   margin: 0;
   padding: 0;
@@ -26,6 +27,7 @@ header a{
 }
 .nav{
   margin-top: 15px;
+  display: flex;
 }
 
 .icon{
@@ -156,3 +158,83 @@ table.agenda td:nth-child(2):contains('Disponible') {
   cursor: pointer;
 }
 
+/* Media Queries */
+@media (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+
+  body {
+    overflow: auto; /* Permitir el desplazamiento en dispositivos móviles */
+  }
+
+  .general h2{
+    font-size: 60px;
+  }
+
+  .general img{
+    padding-right: 5rem;
+  }
+
+  .nav {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Disposición vertical */
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 150px; /* Ancho completo del dispositivo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 60px; /* Ajusta según la posición del header */
+    left: 0;
+    margin-top: -1rem;
+    margin-left: 15rem;
+  }
+
+  /* Estilo de los enlaces del menú */
+  .nav ul {
+    list-style-type: none; /* Sin viñetas */
+    width: 100%; /* Ancho completo */
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+  }
+
+  .nav ul li {
+    width: 100%; /* Cada elemento ocupa toda la línea */
+  }
+
+  .nav a {
+    padding: 10px;
+    color: #333;
+    display: block; /* Mostrar cada enlace en línea separada */
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    width: 60%;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.show {
+    display: flex; /* Mostrar flex */
+    flex-direction: column; /* Forzar disposición vertical */
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 30px;
+    margin-right: 1rem;
+  }
+
+  .info img {
+    margin-left: 2.5rem;
+  }
+
+  .form-container {
+    margin-top: 0;
+  }
+}

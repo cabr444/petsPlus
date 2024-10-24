@@ -1,98 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.timetopet.com/dist/images/brand/icon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.timetopet.com/dist/images/brand/icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../static/css/consult.css" />
     <title>PetPlus</title>
-</head>
+  </head>
   <body>
     <header>
       <div class="icon" onclick="window.location.href='index.html'">
-        <img src="https://www.timetopet.com/dist/images/brand/icon.png" alt="">
-      <h2>PetsPlus</h2>
+        <img
+          src="https://www.timetopet.com/dist/images/brand/icon.png"
+          alt=""
+        />
+        <h2>PetsPlus</h2>
       </div>
-      <div class="nav">
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav" id="navMenu">
         <nav>
           <ul>
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./consult.html">Nosotros</a></li>
             <li><a href="./planner.html">Agenda</a></li>
             <li><a href="./register.html">Registro</a></li>
-            <li><a href="./session.html">sesion <ion-icon name="person-circle-outline" ></ion-icon></a></li>
+            <li>
+              <a href="./session.html"
+                >Sesión <ion-icon name="person-circle-outline"></ion-icon
+              ></a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-    
-    <div class="container">
-      <div class="banner">
-        <img src="../static/images/banner.jpg" alt="">
+      <div class="container">
+        <div class="banner">
+          <img src="../static/images/banner.jpg" alt="" />
+        </div>
+        <div class="about-us">
+          <h2>Quienes somos?</h2>
+          <p>
+            En PetPlus, ofrecemos una atención veterinaria integral y de alta
+            calidad, respaldada por años de experiencia en el cuidado de
+            animales. Nuestro equipo está compuesto por profesionales altamente
+            calificados, con títulos en medicina veterinaria y especializaciones
+            en diversas áreas como cirugía, dermatología y nutrición animal, lo
+            que nos permite brindar un servicio completo y personalizado.
+          </p>
+          <p>
+            Nos enorgullecemos de tratar a cada mascota con el mismo cariño y
+            dedicación que recibirían en su propio hogar. Entendemos que los
+            animales no son solo mascotas, sino miembros de la familia, por lo
+            que nuestra prioridad es asegurar su salud y felicidad en cada
+            consulta.
+          </p>
+          <p>
+            En PetPlus, el trato humano también es esencial. Nos enfocamos en
+            escuchar y entender las necesidades de nuestros clientes, ofreciendo
+            un ambiente acogedor y amigable tanto para las mascotas como para
+            sus dueños. Nuestro objetivo es que cada visita sea lo más cómoda y
+            positiva posible, minimizando el estrés y maximizando la confianza.
+          </p>
+          <img
+            src="https://sanmartin.edu.co/wp-content/uploads/2024/03/facultad-de-medicina-veterinaria-y-zootecnia.png"
+            alt=""
+          />
+        </div>
+
+        <div class="info">
+          <h2>Porque elegirnos?</h2>
+          <p>
+            En PetPlus, ofrecemos una atención veterinaria de calidad,
+            respaldada por años de experiencia y un equipo de profesionales
+            altamente calificados. Nos especializamos en brindar un cuidado
+            personalizado para cada mascota, adaptando nuestros servicios a sus
+            necesidades específicas, y asegurando un entorno acogedor donde se
+            sientan cómodas y seguras.
+          </p>
+          <p>
+            Elegirnos significa optar por un compromiso genuino con el bienestar
+            animal, donde la actualización constante en medicina veterinaria y
+            la satisfacción del cliente son nuestra prioridad. En PetPlus,
+            tratamos a tu mascota con el mismo cariño y dedicación que recibiría
+            en su hogar.
+          </p>
+          <img
+            src="https://www.colvetrionegro.com.ar/wp-content/uploads/2020/04/dog-vet-1536x1025.png"
+            alt=""
+          />
+        </div>
       </div>
-      <div class="about-us">
-        <h2>Quienes somos?</h2>
-        <p>
-          En PetPlus, ofrecemos una atención veterinaria integral y de alta calidad, respaldada por años de experiencia en el cuidado de animales. Nuestro equipo está compuesto por profesionales altamente calificados, con títulos en medicina veterinaria y especializaciones en diversas áreas como cirugía, dermatología y nutrición animal, lo que nos permite brindar un servicio completo y personalizado. 
-        </p>
-        <p>
-          Nos enorgullecemos de tratar a cada mascota con el mismo cariño y dedicación que recibirían en su propio hogar. Entendemos que los animales no son solo mascotas, sino miembros de la familia, por lo que nuestra prioridad es asegurar su salud y felicidad en cada consulta.
-        </p>
-        <p>
-          En PetPlus, el trato humano también es esencial. Nos enfocamos en escuchar y entender las necesidades de nuestros clientes, ofreciendo un ambiente acogedor y amigable tanto para las mascotas como para sus dueños. Nuestro objetivo es que cada visita sea lo más cómoda y positiva posible, minimizando el estrés y maximizando la confianza.
-        </p>
-        <img
-          src="https://sanmartin.edu.co/wp-content/uploads/2024/03/facultad-de-medicina-veterinaria-y-zootecnia.png"
-          alt=""
-        />
+      <div class="form-container" id="form-container">
+        <form action="#" method="post">
+          <h2>Agenda tu cita!</h2>
+          <label for="name">Nombre Duenio:</label>
+          <input type="text" id="nameD" name="nameD" required />
+          <label for="petName">Nombre de la mascota:</label>
+          <input type="text" id="petName" name="petName" required />
+          <label for="password">Dia de la cita:</label>
+          <input type="date" id="day" name="day" required />
+          <button type="submit">Enviar</button>
+        </form>
       </div>
-
-      <div class="info">
-        <h2>Porque elegirnos?</h2>
-        <p>
-          En PetPlus, ofrecemos una atención veterinaria de calidad, respaldada por años de experiencia y un equipo de profesionales altamente calificados. Nos especializamos en brindar un cuidado personalizado para cada mascota, adaptando nuestros servicios a sus necesidades específicas, y asegurando un entorno acogedor donde se sientan cómodas y seguras.
-        </p>
-        <p>
-          Elegirnos significa optar por un compromiso genuino con el bienestar animal, donde la actualización constante en medicina veterinaria y la satisfacción del cliente son nuestra prioridad. En PetPlus, tratamos a tu mascota con el mismo cariño y dedicación que recibiría en su hogar.
-        </p>
-        <img
-          src="https://www.colvetrionegro.com.ar/wp-content/uploads/2020/04/dog-vet-1536x1025.png"
-          alt=""
-        />
-      </div>
-    </div>
-    <div class="form-container">
-      <form action="#" method="post">
-        <h2>Agenda tu cita !</h2>
-        <label for="name">Nombre Duenio:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Nombre de la mascota: :</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="password">Dia de la cita:</label>
-        <input type="password" id="password" name="password" required />
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </main>
-  <footer>
-    <div class="footer">
+    </main>
+    <footer>
+      <div class="footer">
         <div class="social">
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-whatsapp"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
         </div>
         <p>PetsPlus 2024 ®</p>
         <p>Todos los derechos reservados.</p>
-    </div>
-</footer>
-<script src="script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          // Obtener los valores de los campos del formulario
+          const nameD = document.getElementById("nameD").value.trim();
+          const petName = document.getElementById("petName").value.trim();
+          const day = document.getElementById("day").value.trim();
+
+          // Verificar si algún campo está vacío
+          if (!nameD || !petName || !day) {
+            // Prevenir el envío del formulario
+            event.preventDefault();
+            // Mostrar la alerta
+            alert("Por favor, completa todos los campos antes de enviar.");
+          }
+        });
+    </script>
+    <script src="../static/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

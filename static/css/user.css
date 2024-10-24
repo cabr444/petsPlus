@@ -16,40 +16,38 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  position: relative; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
   z-index: 1;
   cursor: pointer;
 }
 
-header h2{
+header h2 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-header a{
+header a {
   color: black;
 }
 
-
-
-.icon img{
+.icon img {
   margin-top: -8px;
   width: 50px;
 }
 
-.nav ul{
+.nav ul {
   display: flex;
 }
-.icon{
-  display: flex;
-}
-
-.nav ul{
+.icon {
   display: flex;
 }
 
-.nav li{
+.nav ul {
+  display: flex;
+}
+
+.nav li {
   margin: 0 20px;
 }
 
@@ -83,11 +81,11 @@ main {
   justify-content: center;
 }
 
-.banner2{
+.banner2 {
   width: 100%;
 }
 
-.banner2 img{
+.banner2 img {
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -100,21 +98,24 @@ main {
   width: 50%;
 }
 
-.perfil img{
+.perfil img {
   margin-top: 3rem;
   width: 200px;
   margin-bottom: 50px;
 }
 
-.profile-info, .pet-info, .actions {
+.profile-info,
+.pet-info,
+.actions {
   margin-bottom: 20px;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #141414;
 }
 
-h3{
+h3 {
   padding: 2rem 0;
 }
 
@@ -142,24 +143,75 @@ footer {
   text-align: center;
 }
 
-.footer{
+.footer {
   display: block;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  
 }
 
-.social{
-  display:center;
+.social {
+  display: center;
   gap: 12px;
   margin-bottom: 25px;
 }
 
-.social ion-icon{
-  border:  1px solid #C9CCCB;
+.social ion-icon {
+  border: 1px solid #c9cccb;
   border-radius: 6px;
   padding: 8px;
   cursor: pointer;
 }
 
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  .perfil {
+    width: 90%;
+  }
+  .nav a {
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.show {
+    display: flex;
+  }
+  
+  #navMenu {
+    margin-top: 9rem;
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: -100px;
+    right: 0;
+    z-index: 10;
+    width: 150px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mostrar el menú cuando se agrega la clase 'show' */
+  #navMenu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Ocultar ícono del menú "hamburger" en pantallas grandes */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
