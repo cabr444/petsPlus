@@ -12,30 +12,31 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="../static/css/planner.css" />
     <title>PetPlus</title>
   </head>
   <body>
     <header>
       <div class="icon" onclick="window.location.href='index.html'">
-        <img
-          src="https://www.timetopet.com/dist/images/brand/icon.png"
-          alt=""
-        />
+        <img src="https://www.timetopet.com/dist/images/brand/icon.png" alt="">
         <h2>PetsPlus</h2>
       </div>
-      <div class="nav">
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav" id="navMenu">
         <nav>
           <ul>
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./consult.html">Nosotros</a></li>
             <li><a href="./planner.html">Agenda</a></li>
             <li><a href="./register.html">Registro</a></li>
-            <li><a href="./session.html">sesion <ion-icon name="person-circle-outline" ></ion-icon></a></li>
+            <li><a href="./session.html">Sesión <ion-icon name="person-circle-outline"></ion-icon></a></li>
           </ul>
         </nav>
       </div>
+      
     </header>
+  
     <div class="general">
       <h2>Agenda Semanal de Citas</h2>
       <p>

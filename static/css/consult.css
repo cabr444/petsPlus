@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,74 +10,85 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Alinear elementos verticalmente */
   background-color: #fff; /* Color de fondo */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: relative; /* Asegúrate de que el header no esté superpuesto */
-  z-index: 10; /* Prioridad en la pila de elementos */
+  padding: 10px 20px;
+  position: relative;
 }
 
-header h2{
-  font-size: 2rem;
-  font-weight: bold;
+header h2 {
+  font-size: 1.8rem; /* Tamaño de fuente más pequeño */
 }
-header a{
+
+.header h2 {
+  margin: 0; /* Eliminar margen */
+}
+
+header a {
   color: black;
 }
 
-.nav{
-  margin-top: 15px;
-  
+.nav {
+  display: flex;
+  align-items: center;
 }
 
-.icon{
+.icon {
   display: flex;
-  margin-top: 10px;
+  align-items: center; /* Alinear imagen y texto */
   cursor: pointer;
 }
 
-.icon h2{
-  margin-top: 3px;
+.icon h2 {
+  margin-left: 10px; /* Espacio entre imagen y texto */
 }
 
-.icon img{
-  margin-top: -8px;
-  width: 50px;
+.icon img {
+  width: 40px; /* Reducir el tamaño de la imagen */
 }
 
-.nav ul{
+.nav ul {
   display: flex;
+  flex-wrap: wrap; /* Permitir que el menú se ajuste en múltiples líneas */
 }
 
-.nav li{
-  margin: 0 30px;
+.nav li {
+  margin: 0 15px; /* Espaciado más pequeño entre elementos */
 }
 
 nav ul li a:hover {
   color: skyblue;
 }
 
-.banner{
-  width: 100%;
-  height: auto;
-  display: inline-block
+.hamburger {
+  display: none; /* Ocultar por defecto */
+  font-size: 30px;
+  cursor: pointer;
 }
 
-.banner img{
-  width: 140%;
-  height: 500px;
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner img {
+  width: 100%; /* Asegurar que la imagen se ajuste al contenedor */
+  height: auto; /* Mantener la proporción */
   margin-bottom: 5rem;
 }
 
-body{
-  height: 100vh;
+body {
+  height: auto;
 }
 
 main {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Cambiar a columna para móviles */
+  align-items: center; /* Centrar elementos */
   background-color: white;
+  padding: 20px; /* Espaciado interno */
 }
 
 .form-container {
@@ -85,49 +96,44 @@ main {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%; /* Ancho completo en móviles */
+  max-width: 400px; /* Limitar ancho máximo */
   margin-top: 10rem;
 }
 
-.container{
+.container {
   margin: 3rem 0;
-  margin-right: 4rem;
-  width: 900px;
+  width: 100%; /* Ancho completo en móviles */
+  max-width: 900px; /* Limitar ancho máximo */
   height: auto;
-  position: relative;
   border-radius: 15px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
 }
 
-
 .container p {
   margin-top: 2rem;
-  line-height: 30px;
+  line-height: 1.5; /* Mejorar la legibilidad */
 }
 
-.about-us img{
-  width: 350px;
-  padding-left: 4rem;
-  margin-top: 2rem;
+.about-us img {
+  width: 100%; /* Asegurar que la imagen se ajuste al contenedor */
+  max-width: 350px; /* Limitar ancho máximo */
+  margin: 2rem 0; /* Espaciado vertical */
 }
 
-.info{
+.info {
   margin-top: 3rem; 
 }
 
-.info p{
-  text-align: justify;
-}
-
-.info h2{
+.info h2 {
   margin-bottom: 2rem;
 }
 
-.info img{
+.info img {
   margin-top: 3rem;
-  margin-left: 3rem;
-  width: 500px;
+  width: 100%; /* Asegurar que la imagen se ajuste al contenedor */
+  max-width: 500px; /* Limitar ancho máximo */
 }
 
 form h2 {
@@ -137,49 +143,109 @@ form h2 {
 
 form label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 form input {
-  width: 100%;
+  width: 100%; /* Ancho completo */
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 form button {
-  width: 100%;
+  width: 100%; /* Ancho completo */
   padding: 10px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #007bff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
-.footer{
-  display: block;
-  margin: 0 auto;
+.footer {
+  width: 100%;
   padding: 20px;
   text-align: center;
-  
+  background-color: #f8f8f8;
+  margin-top: 2rem;
 }
 
-.social{
-  display:center;
+.social {
+  display: center;
   gap: 12px;
   margin-bottom: 25px;
 }
 
-.social ion-icon{
-  border:  1px solid #C9CCCB;
+.social ion-icon {
+  border: 1px solid #C9CCCB;
   border-radius: 6px;
   padding: 8px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+
+
+  /* Estilo de los enlaces del menú */
+  .nav a {
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.show {
+    display: flex;
+  }
+  
+  #navMenu {
+    margin-top: 9rem;
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: -100px;
+    right: 0;
+    z-index: 10;
+    width: 150px;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mostrar el menú cuando se agrega la clase 'show' */
+  #navMenu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .info img{
+    margin-left: 2.5rem;
+  }
+
+  .form-container{
+    margin-top: 0px;
+  }
 }
 

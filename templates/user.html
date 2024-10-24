@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.timetopet.com/dist/images/brand/icon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.timetopet.com/dist/images/brand/icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../static/css/user.css" />
     <title>PetPlus</title>
-</head>
+  </head>
   <body>
     <header>
       <div class="icon" onclick="window.location.href='index.html'">
-        <img src="https://www.timetopet.com/dist/images/brand/icon.png" alt="">
-      <h2>PetsPlus</h2>
+        <img
+          src="https://www.timetopet.com/dist/images/brand/icon.png"
+          alt=""
+        />
+        <h2>PetsPlus</h2>
       </div>
-      <div class="nav">
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav" id="navMenu">
         <nav>
           <ul>
             <li><a href="./index.html">Inicio</a></li>
             <li><a href="./consult.html">Nosotros</a></li>
             <li><a href="./planner.html">Agenda</a></li>
             <li><a href="./register.html">Registro</a></li>
-            <li><a href="./session.html">sesion <ion-icon name="person-circle-outline" ></ion-icon></a></li>
+            <li>
+              <a href="./session.html"
+                >Sesión <ion-icon name="person-circle-outline"></ion-icon
+              ></a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-    
+
     <div class="banner2">
-      <img src="../static/images/banner2.png" alt="">
+      <img src="../static/images/banner2.png" alt="" />
     </div>
 
     <main>
@@ -37,7 +51,7 @@
         <div class="profile-info">
           <h2>Bienvenido nuevamente !</h2>
           <br />
-          <hr>
+          <hr />
           <img
             src="https://www.clipartmax.com/png/full/255-2557794_animated-person-animated-picture-of-man.png"
             alt=""
@@ -46,20 +60,21 @@
           <p><strong>Teléfono:</strong> +57 123 456 7890</p>
           <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad</p>
         </div>
-
         <div class="pet-info">
-          <br>
-          <hr>
+          <br />
+          <hr />
           <h3>Información de la Mascota</h3>
-          <hr>
-          <img src="https://cdn.shopify.com/s/files/1/0565/8021/0861/files/Downloader_37.png?v=1687504134" alt="">
+          <hr />
+          <img
+            src="https://cdn.shopify.com/s/files/1/0565/8021/0861/files/Downloader_37.png?v=1687504134"
+            alt=""
+          />
           <p><strong>Nombre:</strong> Firulais</p>
           <p><strong>Especie:</strong> Perro</p>
           <p><strong>Raza:</strong> Labrador</p>
           <p><strong>Edad:</strong> 3 años</p>
           <p><strong>Última Visita:</strong> 10 de Septiembre, 2024</p>
         </div>
-
         <div class="actions">
           <h3>Acciones</h3>
           <ul>
@@ -73,18 +88,30 @@
     </main>
     <footer>
       <div class="footer">
-          <div class="social">
-              <ion-icon name="logo-twitter"></ion-icon>
-              <ion-icon name="logo-facebook"></ion-icon>
-              <ion-icon name="logo-whatsapp"></ion-icon>
-              <ion-icon name="logo-instagram"></ion-icon>
-          </div>
-          <p>PetsPlus 2024 ®</p>
-          <p>Todos los derechos reservados.</p>
+        <div class="social">
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+        <p>PetsPlus 2024 ®</p>
+        <p>Todos los derechos reservados.</p>
       </div>
-  </footer>
-  <script src="../static/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </footer>
+    <script src="../static/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

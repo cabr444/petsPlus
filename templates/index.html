@@ -14,20 +14,23 @@
   <header>
     <div class="icon" onclick="window.location.href='index.html'">
       <img src="https://www.timetopet.com/dist/images/brand/icon.png" alt="">
-    <h2>PetsPlus</h2>
+      <h2>PetsPlus</h2>
     </div>
-    <div class="nav">
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="nav" id="navMenu">
       <nav>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
           <li><a href="./consult.html">Nosotros</a></li>
           <li><a href="./planner.html">Agenda</a></li>
           <li><a href="./register.html">Registro</a></li>
-          <li><a href="./session.html">sesion <ion-icon name="person-circle-outline" ></ion-icon></a></li>
+          <li><a href="./session.html">Sesión <ion-icon name="person-circle-outline"></ion-icon></a></li>
         </ul>
       </nav>
     </div>
   </header>
+  
+  
   <div class="title">
     <h2>PetsPlus</h2>
   </div>
@@ -45,6 +48,7 @@
                 </ul>    
             <h4>¡Nos aseguramos que tus mascotas reciban el mejor cuidado posible!</h4><br><br>
             <button class="btn" onclick="window.location.href='session.html'">Agendar servicio</button>
+
             </div>
          </div>
     </main>
@@ -63,6 +67,7 @@
     <script src="../static/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>

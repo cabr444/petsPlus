@@ -258,3 +258,61 @@ form h2 {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .hamburger{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Disposición vertical */
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 150px; /* Ancho completo del dispositivo */
+    max-width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 60px; /* Ajusta según la posición del header */
+    left: 0;
+    margin-top: -1rem;
+    left: 65%;
+  }
+
+  /* Estilo de los enlaces del menú */
+  .nav ul {
+    flex-direction: column; /* Alinear elementos verticalmente */
+  }
+
+  .nav ul li {
+    width: 100%; /* Cada elemento ocupa toda la línea */
+  }
+
+  .nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block; /* Mostrar cada enlace en línea separada */
+  }
+
+  .nav a:hover {
+    background-color: #ddd;
+    width: 100px;
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .nav.show {
+    display: flex; /* Mostrar flex */
+    flex-direction: column; /* Forzar disposición vertical */
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-top: 7px;
+    font-size: 30px;
+    margin-right: 1rem;
+  }
+}
+

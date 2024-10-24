@@ -1,132 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://www.timetopet.com/dist/images/brand/icon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../static/css/register.css" />
     <title>PetPlus</title>
 </head>
-  <body>
-    <header>
-      <div class="icon" onclick="window.location.href='index.html'">
-        <img
-          src="https://www.timetopet.com/dist/images/brand/icon.png"
-          alt=""
-        />
+<body>
+<header>
+    <div class="icon" onclick="window.location.href='index.html'">
+        <img src="https://www.timetopet.com/dist/images/brand/icon.png" alt="">
         <h2>PetsPlus</h2>
-      </div>
-      <div class="nav">
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="nav" id="navMenu">
         <nav>
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./consult.html">Nosotros</a></li>
-            <li><a href="./planner.html">Agenda</a></li>
-            <li><a href="./register.html">Registro</a></li>
-            <li><a href="./session.html">sesion <ion-icon name="person-circle-outline" ></ion-icon></a></li>
-          </ul>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./consult.html">Nosotros</a></li>
+                <li><a href="./planner.html">Agenda</a></li>
+                <li><a href="./register.html">Registro</a></li>
+                <li><a href="./session.html">Sesión <ion-icon name="person-circle-outline"></ion-icon></a></li>
+            </ul>
         </nav>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-      <div class="container">
+<main>
+    <div class="container">
         <h1>Registro de mascotas</h1>
         <div class="img">
-          <img
-            src="https://segurosexito.vtexassets.com/arquivos/reclamos-seguros-mascotas.png"
-            alt=""
-          />
+            <img src="https://segurosexito.vtexassets.com/arquivos/reclamos-seguros-mascotas.png" alt="" />
         </div>
         <div class="form-container">
-          <form action="#" method="post">
-            <h2>¡Registra a tu peludito!</h2>
-            <div class="inputs">
-              <div class="form_pet">
-                <label for="service">Servicio a solicitar</label>
-                <select id="service">
-                  <option>Consulta veterinaria</option>
-                  <option>Baño y peluquería</option>
-                  <option>Peluquería</option>
-                  <option>Guardería</option>
-                </select>
+            <form action="#" method="post">
+                <h2>¡Registra a tu peludito!</h2>
+                <div class="inputs">
+                    <div class="form_pet">
+                        <label for="service">Servicio a solicitar</label>
+                        <select id="service" required>
+                            <option value="">Seleccionar servicio</option>
+                            <option>Consulta veterinaria</option>
+                            <option>Baño y peluquería</option>
+                            <option>Peluquería</option>
+                            <option>Guardería</option>
+                        </select>
 
-                <label for="pettype">Tipo de mascota</label>
-                <select id="pettype" name="pettype" required>
-                  <option>Gato</option>
-                  <option>Perro</option>
-                  <option>Otro</option>
-                </select>
+                        <label for="pettype">Tipo de mascota</label>
+                        <select id="pettype" name="pettype" required>
+                            <option value="">Seleccionar tipo de mascota</option>
+                            <option>Gato</option>
+                            <option>Perro</option>
+                            <option>Otro</option>
+                        </select>
 
-                <label for="namepet">Nombre del peludo</label>
-                <input
-                  type="text"
-                  id="namepet"
-                  placeholder="Mascota"
-                  name="namepet"
-                  required
-                />
+                        <label for="namepet">Nombre del peludo</label>
+                        <input type="text" id="namepet" placeholder="Mascota" name="namepet" required />
 
-                <label for="date">Fecha</label>
-                <input type="date" id="date" name="date" required />
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" name="date" required />
 
-                <label for="time">Hora</label>
-                <input type="datetime" id="time" name="time" required />
+                        <label for="time">Hora</label>
+                        <input type="datetime-local" id="time" name="time" required />
 
-                <label for="place">Sede</label>
-                <select id="place" name="place" required>
-                  <option>Sede centro</option>
-                  <option>Sede norte</option>
-                  <option>Sede sur</option>
-                </select>
-              </div>
-              <div class="form_human">
-                <label for="name">Nombre del dueño</label>
-                <input type="text" id="name" name="name" required />
+                        <label for="place">Sede</label>
+                        <select id="place" name="place" required>
+                            <option value="">Seleccionar sede</option>
+                            <option>Sede centro</option>
+                            <option>Sede norte</option>
+                            <option>Sede sur</option>
+                        </select>
+                    </div>
+                    <div class="form_human">
+                        <label for="ownerName">Nombre del dueño</label>
+                        <input type="text" id="ownerName" name="ownerName" required />
 
-                <label for="id">Número de cédula</label>
-                <input type="id" id="id" name="id" required />
+                        <label for="id">Número de cédula</label>
+                        <input type="text" id="id" name="id" required />
 
-                <label for="mail">Correo</label>
-                <input
-                  type="id"
-                  id="id"
-                  name="id"
-                  placeholder="Email"
-                  required
-                />
+                        <label for="email">Correo</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
 
-                <label for="phone">Celular</label>
-                <input type="phone" id="phone" name="phone" required />
-              </div>
-            </div>
-            <button type="submit">Solicitar servicio</button>
-          </form>
+                        <label for="phone">Celular</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+                </div>
+                <button type="submit">Solicitar servicio</button>
+            </form>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer">
+    </div>
+</main>
+<footer>
+    <div class="footer">
         <div class="social">
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-facebook"></ion-icon>
-          <ion-icon name="logo-whatsapp"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
         </div>
         <p>PetsPlus 2024 ®</p>
         <p>Todos los derechos reservados.</p>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+    </div>
+</footer>
+<script src="../static/js/script.js"></script>
+<script>
+    // Función para validar el formulario
+    function validateForm(event) {
+        // Obtener todos los campos de entrada y selección dentro del formulario
+        const inputs = document.querySelectorAll('.form-container input, .form-container select');
+
+        let isValid = true; // Bandera para controlar la validez del formulario
+
+        // Recorrer cada campo para verificar si está vacío o contiene solo espacios en blanco
+        for (let input of inputs) {
+            // Verifica que el campo no sea de tipo submit
+            if (input.type !== 'submit') {
+                if (input.value.trim() === '') {
+                    isValid = false; // Marca como no válido si hay un campo vacío
+                    alert('Por favor, completa todos los campos correctamente. No se permiten cadenas vacías.'); // Muestra la alerta
+                    input.focus(); // Lleva el foco al campo vacío
+                    break; // Sale del bucle en caso de encontrar un campo no válido
+                }
+            }
+        }
+
+        // Si el formulario no es válido, evitar el envío
+        if (!isValid) {
+            event.preventDefault(); // Evita el envío del formulario
+        }
+
+        return isValid; // Devuelve el estado de validez
+    }
+
+    // Agregar un evento de escucha al formulario para la validación al enviar
+    document.querySelector('form').addEventListener('submit', validateForm);
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
