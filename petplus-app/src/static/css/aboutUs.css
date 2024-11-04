@@ -1,0 +1,56 @@
+.ctn-main {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para móviles */
+  align-items: center; /* Centrar elementos */
+}
+
+.container {
+  box-shadow: none;
+  display: block;
+  width: 100%; /* Ancho completo en móviles */
+  max-width: 900px; /* Limitar ancho máximo */
+  height: auto;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.container p {
+  margin-top: 2rem;
+  line-height: 1.5; /* Mejorar la legibilidad */
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
+}
+.banner img {
+  width: 99vw;
+  height: 600px;
+  display: block;
+  margin: 0 auto; /* Espaciado vertical */
+}
+
+.about-us img{
+  width: 20rem;
+  margin-left: 35%;
+  margin-top: 2rem;
+}
+
+.aboutUs-info {
+  margin-top: 3rem; 
+}
+
+.aboutUs-info h2 {
+  margin-bottom: 2rem;
+}
+
+.aboutUs-info img {
+  width: 30rem;
+  margin-top: 3rem;
+  margin-left: 30%;
+}
+
