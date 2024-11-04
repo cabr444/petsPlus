@@ -1,0 +1,75 @@
+.user-main {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner2 {
+  width: 100%;
+}
+
+.banner2 img {
+  margin-top: 1px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;;
+}
+
+.profile {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 50%;
+}
+
+.profile img {
+  margin-top: 3rem;
+  width: 200px;
+  margin-bottom: 50px;
+  margin-left: 35%;
+}
+
+.information-pet {
+  line-height: 30px;
+}
+
+.profile-info{
+  margin-bottom: 3rem;
+}
+
+.profile-info h2{
+  margin-bottom: 3rem;
+}
+
+.profile-info p{
+  line-height: 30px;
+}
+
+
+h2,
+h3 {
+  color: #141414;
+  text-align: center;
+}
+
+h3 {
+  padding: 2rem 0;
+}
+
+.actions ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.actions ul li {
+  margin: 10px 0;
+}
+
+.actions ul li a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.actions ul li a:hover {
+  text-decoration: underline;
+}

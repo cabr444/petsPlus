@@ -1,0 +1,14 @@
+/* General adjustments */
+.img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: -6rem;
+}
+
+.img img {
+  display: block;
+  margin: 0 auto;
+}
+
+

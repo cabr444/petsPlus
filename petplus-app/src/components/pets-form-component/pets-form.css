@@ -1,0 +1,43 @@
+.form-container-pets-form {
+  background-color: rgba(0, 0, 0, 0.241);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ancho completo en móviles */
+  max-width: 400px; /* Limitar ancho máximo */
+  margin-top: 4rem;
+}
+
+.form-container-pets-form form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.form-container-pets-form form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container-pets-form form input {
+  width: 100%; /* Ancho completo */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container-pets-form form button {
+  width: 100%; /* Ancho completo */
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container-pets-form form button:hover {
+  background-color: #0056b3;
+}
